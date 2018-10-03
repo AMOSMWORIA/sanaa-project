@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <script src="js/jquery-3.3.1.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/js?key="></script>
+    
+    <script src="js/scripts.js"></script>
+</head>
+<div class="container">
+    <div class="row">
+       <div class="col-md-9"></div>
+       <div class="col-md-1">HOME</div>
+       <div class="col-md-1">GALLARY</div>
+       <div class="col-md-1">ABOUT</div>   
+ </div>
+
+<div class="container">
+    <div class="row">
+       <div class="col-md-7">
+            <h5>You passionate about art as we are?!</h5>
+            <h5>Don't hesitate to contact us</h5>
+ 
+<form class="form-group">
+    <br>
+    <input type="text" id="text" class="form-control" placeholder="Name" name="firstname" required autofocus>
+    <br>
+    <input type="text" id="inputEmail" placeholder="Email address" name="email" required autofocus>
+    <br>
+    <textarea placeholder="Write us"></textarea>
+    <br>
+    <a href="form4.html" class="button" type="submit" button-small>Send</a>
+
+</form>
+<div>
+        <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
+       </div>      
+       
+       
+       
+       </div>
+
+<div class="col-md-5">
+
+<style>
+    /* Set the size of the div element that contains the map */
+   #map {
+     height: 300px;  /* The height is 400 pixels */
+     width: 100%;  /* The width is the width of the web page */
+    }
+ </style>
+
+ <!--The div element for the map -->
+ 
+ <div class="card">
+        <div class="container">
+        <div id="map"></div>
+        <h4><b>visit us</b></h4> 
+        </div>
+      </div>
+      
+</div>
+</div>
+</div>
+
+ <script>
+// Initialize and add the map
+function initMap() {
+// The location of Uluru
+var uluru = {lat: -1.300722, lng: 36.784538};
+// The map, centered at Uluru
+var map = new google.maps.Map(
+   document.getElementById('map'), {zoom: 4, center: uluru});
+// The marker, positioned at Uluru
+var marker = new google.maps.Marker({position: uluru, map: map});
+}
+ </script>
+ <!--Load the API from the specified URL
+ * The async attribute allows the browser to render the page while the API loads
+ * The key parameter will contain your own API key (which is not needed for this tutorial)
+ * The callback parameter executes the initMap() function
+ -->
+ <script async defer
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIDmpVNw_IZxzbQ6t9wsE1pSctdaR4RK4&callback=initMap">
+ </script>
+
+
+
+
+
+
+
+
+       
+       
+
+
+</html>
+<footer>
+        <div>
+                <a href="@sanaa">
+                <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />
+                </a>
+                <a href="@sanaa">
+                <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" />
+                </a>
+                <a href="@sanaa">
+                <img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35" height="35" />
+                </a>
+                <a href="@sanaa">
+                <img title="email" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/email.png" width="35" height="35" />
+                </a>
+            </div>
+</footer>
