@@ -15,16 +15,16 @@ input[type=text], select {
     background-color: rgb(41, 130, 212);
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 8px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 8px;
     margin: 4px 2px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
-    border-radius: 12px;
+    border-radius: 6px;
 }
 
 .button{
@@ -47,24 +47,7 @@ textarea {
     background-color: #f8f8f8;
     resize: none;
 }
-/* css for scroll down menu button */
-  .ct-btn-scroll {
-    width: 49px;
-    height: 49px;
-    position: absolute;
-    bottom: 30px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding-top: 500px;
-    z-index: 9;
-    border-radius: 50%;
-    -webkit-transition: background-color 0.25s ease-in-out;
-    transition: background-color 0.25s ease-in-out;
-  }
 
-
-  
 
 /* map card */
   .card {
@@ -81,4 +64,42 @@ textarea {
 
 .container {
     padding: 2px 8px;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+height: 300px;  /* The height is 400 pixels */
+width: 100%;  /* The width is the width of the web page */
+}
+
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+}
+
+.container-fluid {
+    background-color: black;
+    z-index: 1;
+    position: fixed;
+    height:150px;
+ 
+}
+
+#section2 {
+    text-align: center;
+    margin: auto 80%;
+    font-size: 200%;
+}
+addres{
+    color:white;
+
+}
+#section1{
+    font-size:150%;
+}
+.title{
+    text-align: center;
 }
